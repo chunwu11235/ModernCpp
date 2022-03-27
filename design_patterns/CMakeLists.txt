@@ -1,0 +1,77 @@
+add_library(design_patterns design_patterns.cpp)
+
+add_subdirectory(builder)
+target_link_libraries(design_patterns PUBLIC design_patterns_builder)
+target_include_directories(design_patterns PUBLIC builder/)
+
+add_subdirectory(factory)
+target_link_libraries(design_patterns PUBLIC design_patterns_factory)
+target_include_directories(design_patterns PUBLIC factory/)
+
+add_subdirectory(prototype)
+target_link_libraries(design_patterns PUBLIC design_patterns_prototype)
+target_include_directories(design_patterns PUBLIC prototype/)
+
+add_subdirectory(adaptor)
+target_link_libraries(design_patterns PUBLIC design_patterns_adaptor)
+target_include_directories(design_patterns PUBLIC adaptor/)
+
+add_subdirectory(composite)
+target_link_libraries(design_patterns PUBLIC design_patterns_composite)
+target_include_directories(design_patterns PUBLIC composite/)
+
+add_subdirectory(decorator)
+target_link_libraries(design_patterns PUBLIC design_patterns_decorator)
+target_include_directories(design_patterns PUBLIC decorator/)
+
+add_subdirectory(strategy)
+target_link_libraries(design_patterns PUBLIC design_patterns_strategy)
+target_include_directories(design_patterns PUBLIC strategy/)
+
+add_subdirectory(template_method)
+target_link_libraries(design_patterns PUBLIC design_patterns_template_method)
+target_include_directories(design_patterns PUBLIC template_method/)
+
+add_subdirectory(singleton)
+target_link_libraries(design_patterns PUBLIC design_patterns_singleton)
+target_include_directories(design_patterns PUBLIC singleton/)
+
+add_subdirectory(observer)
+target_link_libraries(design_patterns PUBLIC design_patterns_observer)
+target_include_directories(design_patterns PUBLIC observer/)
+
+add_subdirectory(mediator)
+target_link_libraries(design_patterns PUBLIC design_patterns_mediator)
+target_include_directories(design_patterns PUBLIC mediator/)
+
+add_subdirectory(chain_of_responsibility)
+target_link_libraries(design_patterns PUBLIC design_patterns_chain)
+target_include_directories(design_patterns PUBLIC chain_of_responsibility/)
+
+add_subdirectory(bridge)
+target_link_libraries(design_patterns PUBLIC design_patterns_bridge)
+target_include_directories(design_patterns PUBLIC bridge/)
+
+add_subdirectory(command)
+target_link_libraries(design_patterns PUBLIC design_patterns_command)
+target_include_directories(design_patterns PUBLIC command/)
+
+add_subdirectory(proxy)
+target_link_libraries(design_patterns PUBLIC design_patterns_proxy)
+target_include_directories(design_patterns PUBLIC proxy/)
+
+add_subdirectory(flyweight)
+target_link_libraries(design_patterns PUBLIC design_patterns_flyweight)
+target_include_directories(design_patterns PUBLIC flyweight/)
+
+add_subdirectory(memento)
+target_link_libraries(design_patterns PUBLIC design_patterns_memento)
+target_include_directories(design_patterns PUBLIC memento/)
+
+add_subdirectory(state)
+target_link_libraries(design_patterns PUBLIC design_patterns_state)
+target_include_directories(design_patterns PUBLIC state/)
+
+add_subdirectory(visitor)
+target_link_libraries(design_patterns PUBLIC design_patterns_visitor)
+target_include_directories(design_patterns PUBLIC visitor/)
